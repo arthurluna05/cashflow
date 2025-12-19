@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CashFlow.API/CashFlow.API.csproj" />
+    <Project Path="src/CashFlow.APPLICATION/CashFlow.APPLICATION.csproj" />
+    <Project Path="src/CashFlow.COMMUNICATION/CashFlow.COMMUNICATION.csproj" />
+    <Project Path="src/CashFlow.DOMAIN/CashFlow.DOMAIN.csproj" />
+    <Project Path="src/CashFlow.EXCEPTION/CashFlow.EXCEPTION.csproj" />
+    <Project Path="src/CashFlow.INFRASTRUCTURE/CashFlow.INFRASTRUCTURE.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CommomTestUtilities/CommomTestUtilities.csproj" Id="a382614a-6362-4594-9e7e-cf710b448dbf" />
+    <Project Path="tests/Validators.TESTS/Validators.TESTS.csproj" Id="a9441c6b-150b-4c1d-af75-7baff9234d33" />
+  </Folder>
+</Solution>

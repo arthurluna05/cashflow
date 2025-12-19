@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="USECASES\EXPENSES\REPORTS\PDF\FONTS\Raleway-Black.ttf" />
+    <None Remove="USECASES\EXPENSES\REPORTS\PDF\FONTS\Raleway-Regular.ttf" />
+    <None Remove="USECASES\EXPENSES\REPORTS\PDF\FONTS\WorkSans-Black.ttf" />
+    <None Remove="USECASES\EXPENSES\REPORTS\PDF\FONTS\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="USECASES\EXPENSES\REPORTS\PDF\FONTS\Raleway-Black.ttf" />
+    <EmbeddedResource Include="USECASES\EXPENSES\REPORTS\PDF\FONTS\Raleway-Regular.ttf" />
+    <EmbeddedResource Include="USECASES\EXPENSES\REPORTS\PDF\FONTS\WorkSans-Black.ttf" />
+    <EmbeddedResource Include="USECASES\EXPENSES\REPORTS\PDF\FONTS\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CashFlow.COMMUNICATION\CashFlow.COMMUNICATION.csproj" />
+    <ProjectReference Include="..\CashFlow.DOMAIN\CashFlow.DOMAIN.csproj" />
+    <ProjectReference Include="..\CashFlow.EXCEPTION\CashFlow.EXCEPTION.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="PDFsharp-MigraDoc" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="USECASES\EXPENSES\REPORTS\PDF\LOGO\Foto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
